@@ -42,6 +42,7 @@ function onclickRegister(){
         errors[3].innerText= '';
 
     }
+   
     
 
     

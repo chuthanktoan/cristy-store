@@ -30,5 +30,15 @@ $('.slider_background2').slick({
     searchInput.oninput = function(e){
        return console.log(e.target.value);
     }
+
+    var buyBtns = document.querySelectorAll('.js-buy-product');
+    var number = document.querySelector('.number');
+    var count = 0;
+    for(const buyBtn of buyBtns){
+        buyBtn.addEventListener('click', function(){
+            count = count+1;
+            number.innerText = count;
+        })
+    }
         
 

@@ -3,6 +3,8 @@
     src: url('../fonts/Butler/Butler_Bold.otf');
 }
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Lora', serif;
 }
@@ -12,10 +14,10 @@ html {
 
 body {
     margin: 0 auto;
-    padding: 0 auto;
 }
 
 .container {
+    width: 100%;
     max-width: 1700px;
 
 }
@@ -224,6 +226,7 @@ main_menu i:last-child{
 /* =======MAIN=========== */
 
 .slider_main {
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     background-color: #eef1f8;
@@ -233,19 +236,21 @@ main_menu i:last-child{
 
 .background img {
     text-align: center;
-    align-items: center;
-    box-sizing: border-box;
+    padding: 50px 0;
+    width: 90%;
+    object-fit: cover;
 }
 
 .slider_main > div {
     /* overflow: hidden; */
-    width: calc(100%/2);
+    width: calc(100%/2 - 30px);
     box-sizing: border-box;
-    margin: 70px;
+    /* margin: 70px; */
 }
 
 .content {
-    padding-left: 90px;
+    margin: 20px 0px 0px 90px;
+    padding: 50px;
 }
 .content h1{
     font-family: "Butler";
@@ -271,6 +276,9 @@ main_menu i:last-child{
     font-size: 40px;
     line-height: 25px;
 
+}
+.collection {
+    margin-top: 30px;
 }
 
 .content_collection > p {
@@ -317,6 +325,7 @@ main_menu i:last-child{
 
 .product {
     width: calc(100%/4);
+    height: 250px;
     margin-bottom: 60px;
     padding: 30px;
     /* margin-right: 10px; */
@@ -342,6 +351,7 @@ main_menu i:last-child{
 
 .title_product {
     font-size: 16px;
+    margin: 20px 0;
     
 }
 
@@ -369,13 +379,13 @@ main_menu i:last-child{
     padding: 10px;
 }
 
-.buy_product a:hover i {
+.buy_product button:hover i {
     background-color: #3bb18f;
     transition: 0.25s;
 }
 .product:hover {
     background-color: #222222;
-    opacity: 0.7;
+    /* opacity: 0.7; */
     transition: 0.25s;
 }
 
@@ -579,4 +589,151 @@ footer {
     }
 }
 
+@media screen and (max-width: 391px){
+    .container{
+        max-width: 390px;
+        margin: 0;
+        padding: 0;
+    }
+    .content_header{
+        width: 100%;
+        
+    }
+    .info_header{
+        flex-wrap: wrap;
+    }
+    .wrap_menu{
+        width: 100%;
+    }
+    .sub_menu{
+        width: 300px;
+    }
+    .slider_main{
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+    .slider_main > div {
+        width: 100%;
+        /* margin-left: -70px; */
+        text-align: left;
+    }
+    .slider_background1{
+        margin: 10px;
+        padding: 0;
+    }
+    .content{
+        margin-left: -20px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    .slider_background2{
+        width: 100%;
+        margin-top: 20px;
+        padding: 0;
+        
+    }
+    .slider_background2 .background{
+        width: 100%;
+        text-align: center;
+    }
+    .slider_background2 .background img {
+        width: 80%;
+        /* margin-left: 70px; */
+        padding: 10px;
+        
+    }
+    .content_collection > p{
+        margin: 0;
+    }
+    .title_collection {
+        margin-bottom: 10px;
+    }
+    .title_collection p {
+        /* display: block; */
+        width: 100%;
+        margin: 10px 0;
+        padding: 5px;
+        height: auto;
+        text-align: center;
+        box-sizing: content-box;
+    }
+    .filter_collection {
+        width: 100%;
+        margin: 20px 0;
+        /* justify-content: space-around; */
+        
+    }
+    .filter_collection .bars{
+        margin: 5px;
+    }
+    .filter_collection .sorting {
+        margin: 0px;
+    }
+    .list_collection{
+        /* display: block; */
+        margin: 0;
+    }
+    .product{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+
+    }
+    .view_all {
+        margin: 10px 0;
+    }
+    .slider_second{
+        display: block;
+    }
+    .slider_second .slider_backgrounds{
+        margin: 10px;
+        width: 100%;
+    }
+    .slider_second .slider_backgrounds .content {
+        margin: 10px;
+        padding: 10px;
+    }
+    .slider_second .slider_backgrounds img {
+        margin: 10px;
+        padding: 10px 0;
+    }
+    .list_news {
+        display: block;
+        
+        padding: 10px;
+        margin: 10px;
+    }
+    .list_news .news {
+        
+        margin: 10px;
+    }
+    .list_new .news img {
+        object-fit: cover;
+    }
+    .slider_third {
+        flex-wrap: wrap;
+    }
+    .slider_third .best_seller {
+        width: 100%;
+        margin: 10px;
+        
+    }
+    .background_best img {
+        width: 100%;
+    }
+    .best_seller .content_seller{
+        margin: 20px
+    }
+    .grid_footer {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .grid_footer > div {
+        width: 100%;
+    }
+}
+    
 
