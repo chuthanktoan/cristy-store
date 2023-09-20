@@ -14,6 +14,7 @@ html {
 
 body {
     margin: 0 auto;
+    
 }
 
 .container {
@@ -242,10 +243,9 @@ main_menu i:last-child{
 }
 
 .slider_main > div {
-    /* overflow: hidden; */
+   
     width: calc(100%/2 - 30px);
-    box-sizing: border-box;
-    /* margin: 70px; */
+   
 }
 
 .content {
@@ -590,6 +590,7 @@ footer {
 }
 
 @media screen and (max-width: 391px){
+    
     .container{
         max-width: 390px;
         margin: 0;
@@ -597,10 +598,23 @@ footer {
     }
     .content_header{
         width: 100%;
+        flex-wrap: wrap;
         
     }
+    .content_header > div {
+        width: 100%;
+    }
+    .title_header {
+        margin: 10px;
+        text-align: center;
+    }
     .info_header{
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        text-align: center;
+        justify-content: center;
+    }
+    .info_header div{
+        border: 1px solid #ccc;
     }
     .wrap_menu{
         width: 100%;
@@ -735,5 +749,167 @@ footer {
         width: 100%;
     }
 }
+@media screen and (max-width: 821px) and (min-width: 391px){
     
+    .container{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .content_header{
+        width: 100%;
+        flex-wrap: wrap;
+        
+    }
+    .content_header > div {
+        width: 100%;
+    }
+    .title_header {
+        margin: 10px;
+        text-align: center;
+    }
+    .info_header{
+        /* flex-wrap: wrap; */
+        text-align: center;
+        justify-content: center;
+    }
+    .info_header div{
+        border: 1px solid #ccc;
+    }
+    .wrap_menu{
+        width: 100%;
+    }
+    .sub_menu{
+        width: 300px;
+    }
+    .slider_main{
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+    .slider_main > div {
+        width: 100%;
+        /* margin-left: -70px; */
+        text-align: left;
+    }
+    .slider_background1{
+        margin: 10px;
+        padding: 0;
+    }
+    .content{
+        margin-left: -20px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    .slider_background2{
+        width: 100%;
+        margin-top: 20px;
+        padding: 0;
+        
+    }
+    .slider_background2 .background{
+        width: 100%;
+        text-align: center;
+    }
+    .slider_background2 .background img {
+        width: 80%;
+        /* margin-left: 70px; */
+        padding: 10px;
+        
+    }
+    .content_collection > p{
+        margin: 0;
+    }
+    .title_collection {
+        margin-bottom: 10px;
+    }
+    .title_collection p {
+        /* display: block; */
+        width: 100%;
+        margin: 10px 0;
+        padding: 5px;
+        height: auto;
+        text-align: center;
+        box-sizing: content-box;
+    }
+    .filter_collection {
+        width: 100%;
+        margin: 20px 0;
+        /* justify-content: space-around; */
+        
+    }
+    .filter_collection .bars{
+        margin: 5px;
+    }
+    .filter_collection .sorting {
+        margin: 0px;
+    }
+    .list_collection{
+        /* display: block; */
+        margin: 0;
+    }
+    .product{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+
+    }
+    .view_all {
+        margin: 10px 0;
+    }
+    .slider_second{
+        display: block;
+    }
+    .slider_second .slider_backgrounds{
+        margin: 10px;
+        width: 100%;
+    }
+    .slider_second .slider_backgrounds .content {
+        margin: 10px;
+        padding: 10px;
+    }
+    .slider_second .slider_backgrounds img {
+        margin: 10px;
+        padding: 10px 0;
+    }
+    .list_news {
+        display: block;
+        
+        padding: 10px;
+        margin: 10px;
+    }
+    .list_news .news {
+        margin: 10px;
+    }
+    .list_new .news img {
+        object-fit: cover;
+    }
+    .slider_third {
+        flex-wrap: wrap;
+    }
+    .slider_third .best_seller {
+        width: 100%;
+        margin: 10px;
+        
+    }
+    .background_best img {
+        width: 95%;
+    }
+    .date {
+        top: 22px;
+        left: 212px;
+    }
+    .best_seller .content_seller{
+        margin: 20px
+    }
+    .grid_footer {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .grid_footer > div {
+        width: 100%;
+    }
+}
 
