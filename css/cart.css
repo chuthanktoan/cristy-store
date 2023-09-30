@@ -125,7 +125,9 @@ button:focus {
     padding: 0;
     color:#3db290
 }
-
+.last_bill button {
+    margin-top: 50px;
+}
 footer {
     border-top: 1px solid #ccc;
 }

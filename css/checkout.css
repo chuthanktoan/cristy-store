@@ -42,7 +42,7 @@
     background-color: #3bb18f;
     color: white;
     border: none;
-    padding: 10px 22px;
+    padding: 12px 22px;
 }
 
 .form_code span{
@@ -168,18 +168,25 @@
     margin: 20px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+    
 }
 .detail_total {
     display: flex;
     justify-content: space-between;
 }
-
+.info_total p {
+    margin: 20px 0;
+}
+.price_total p {
+    margin: 20px 0;
+}
 .detail_total .price_total {
     text-align: right;
+  
 }
 
 .payment_method{
-    margin: 20px 0 20px -20px;
+    margin: 20px;
     /* border: 1px solid #ccc; */
 }
 

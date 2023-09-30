@@ -109,7 +109,8 @@ main_menu i:last-child{
     
 } */
 .sub_menu {
-    
+    /* display: block;
+    width: 100%; */
     width: 1000px;
     border-radius: 1px solid #ccc;
     background-color: #eef1f8;
@@ -352,7 +353,7 @@ main_menu i:last-child{
 .title_product {
     font-size: 16px;
     margin: 20px 0;
-    
+   
 }
 
 .price_product {
@@ -367,12 +368,14 @@ main_menu i:last-child{
     position: absolute;
     top: 42%;
     left: 34%;
+
 }
 
 .buy_product a {
     text-decoration: none;
     color: black;
     font-size: 13px;
+    
 }
 .buy_product i {
     background-color: white;
@@ -388,7 +391,6 @@ main_menu i:last-child{
     /* opacity: 0.7; */
     transition: 0.25s;
 }
-
 .product:hover .buy_product{
     transition: 0.25s;
     opacity: 1;

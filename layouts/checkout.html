@@ -303,15 +303,10 @@
             pElement.innerText = 'Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order wott b shipped until the funds have cleared in our account';
         }
         var inputs = document.querySelectorAll('input[type=radio]')
-        inputs[0].onchange = function(){
-            pElement.innerText = "";
-        }
-        inputs[1].onchange = function(){
-            pElement.innerText = "";
-        }
-        inputs[2].onchange = function(){
-            pElement.innerText = "";
-        }
+        for( const input of inputs){
+            input.onchange = function(){
+                 pElement.innerText = "";
+        }}
     </script>
     <script src="../js/main.js"></script>
 </body>
