@@ -1,4 +1,21 @@
-function onclickRegister(){
+var accountApi = 'http://localhost:3000/account';
+const btnRegister = document.querySelector('.btn-register')
+function createAccount(data){
+    var options = {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+            "Content-Type": "application/json",
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+    }
+    
+    fetch(accountApi, options)
+        .then(function(res){
+            return res.json();
+        })
+}
+btnRegister.onclick = function(e){
     var form = document.querySelector('.form_login')
     var inputs = document.querySelectorAll('.form_login input');
     var errors = document.querySelectorAll('.error');
@@ -42,8 +59,14 @@ function onclickRegister(){
         errors[3].innerText= '';
 
     }
-   
+    const email = inputs[1].value;
+    const username = inputs[0].value;
+    const password = inputs[2].value;
     
-
-    
+    var formData = {
+        username: username,
+        password: password
+    }
+    createAccount(formData)
 }
+

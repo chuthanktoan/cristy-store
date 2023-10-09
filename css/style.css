@@ -205,17 +205,16 @@ main_menu i:last-child{
     border-radius:3px;
 }
 
-.search:hover input {
+/* .search:hover input {
     width: 150px;
     padding: 0 10px;
-}
+} */
 
 .search input {
-    width: 0;
+    width: 100%;
     outline: none;
     border: none;
-    transition: 0.8s;
-    
+    padding: 10px;
 }
 
 .search button {

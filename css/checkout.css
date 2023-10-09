@@ -92,6 +92,7 @@
     outline: none;
 }
 .message textarea {
+    display: block;
     margin-top: 20px;
     display: block;
 }
